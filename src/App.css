@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+i.Nav{
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.0975);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  -webkit-transition: height 0.2s ease-in-out;
+  transition: height 0.2s ease-in-out;
+  height: 77px; 
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Nav-menus{
+   display: flex;
+   flex-direction: row;
+   height: 77px;
+   width: 70%;
+   margin: 0 auto;
+   padding: 26px 40px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Nav-brand-logo{
+   display: block;
+   background-position:-176px 0px;
+   background-image: url(../src/components/foto/sprite.png);
+   background-size: 405px 379px;
+   background-repeat: no-repeat;
+   height: 35px;
+   width: 176px;
+   text-indent: -1000%;
 }
-
-.App-link {
-  color: #61dafb;
+.Post{
+   border-radius: 3px;
+   border: 1px solid #e6e6e6;
+   background-color: #fff;
+   margin-bottom: 60px;
+   margin-left: 20%;
+   margin-right: 20%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Post-user{
+   display: flex;
+   padding: 16px;
+   align-items: center;
+}
+.Post-user-avatar{
+   width: 30px;
+   height: 30px;
+}
+.Post-user-avatar img{
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+}
+.Post-user-nickname{
+   margin-left: 12px;
+   font-family: 'PT Sans', sans-serif;
+   font-weight: bold;
+}
+.Post-image img{
+   display: block;
+   width: 100%;
+}
+.Post-caption{
+   padding: 16px 16px;
+}
+.Post-caption strong{
+   font-family: 'PT Sans', sans-serif;
+   font-weight: bold;
+}
+.vjs-fade-out{
+   display: none;
+   visibility: hidden;
+   opacity: 0;
 }
